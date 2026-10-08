@@ -361,7 +361,7 @@ function App() {
       // -------------------------
 
       const aiResponse = await fetch(
-        "http://localhost:5000/api/roast",
+        "/api/roast",
         {
           method: "POST",
 

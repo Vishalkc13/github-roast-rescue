@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json({ limit: "50mb" }));
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 // ==========================================
 // GEMINI AI
@@ -279,6 +279,10 @@ app.use((err, req, res, next) => {
 // START SERVER
 // ==========================================
 
-app.listen(PORT, () => {
-  console.log(`🔥 Server running at http://localhost:${PORT}`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`🔥 Server running at http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app;
