@@ -1,0 +1,213 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+
+/* =========================
+   SCORE IMPROVEMENT
+========================= */
+
+.score-improvement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  padding: 18px 22px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  text-align: center;
+}
+
+.score-improvement > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.score-improvement span {
+  color: #777f8c;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.score-improvement strong {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 25px;
+}
+
+.improvement-arrow {
+  color: #777f8c;
+  font-size: 25px;
+}
+
+.improvement-positive {
+  color: #4ade80;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.improvement-negative {
+  color: #f87171;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+/* =========================
+   ROAST AGAIN
+========================= */
+
+.roast-again {
+  margin: 30px 0 10px;
+
+  padding: 24px 26px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 25px;
+
+  border: 1px solid rgba(255, 77, 77, 0.18);
+
+  border-radius: 16px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 77, 77, 0.08),
+      rgba(255, 112, 77, 0.025)
+    );
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+
+.roast-again-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+
+.roast-again-icon {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: rgba(255, 77, 77, 0.12);
+
+  font-size: 22px;
+
+  flex-shrink: 0;
+}
+
+
+.roast-again-text h3 {
+  margin: 0 0 5px;
+
+  font-size: 15px;
+
+  font-weight: 800;
+}
+
+
+.roast-again-text p {
+  margin: 0;
+
+  color: #777f8c;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+
+.roast-again button {
+  padding: 12px 22px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: linear-gradient(
+    135deg,
+    #ff4d4d,
+    #ff704d
+  );
+
+  color: white;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+
+  box-shadow:
+    0 8px 20px rgba(255, 77, 77, 0.20);
+
+  transition: 0.2s ease;
+}
+
+
+.roast-again button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 25px rgba(255, 77, 77, 0.30);
+}
+
+
+.roast-again button:active {
+  transform: translateY(0);
+}
+
+
+@media (max-width: 600px) {
+
+  .roast-again {
+    flex-direction: column;
+
+    align-items: stretch;
+
+    padding: 20px;
+  }
+
+  .roast-again-content {
+    align-items: flex-start;
+  }
+
+  .roast-again button {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .score-improvement {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .improvement-arrow {
+    font-size: 20px;
+  }
+}
